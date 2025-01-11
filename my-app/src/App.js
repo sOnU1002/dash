@@ -11,7 +11,7 @@ function App() {
     useEffect(() => {
         // Load and parse CSV data
         const fetchData = async () => {
-            const response = await fetch('/Electric_Vehicle_Population_Data.csv');
+            const response = await fetch('my-app/bcakend/Electric_Vehicle_Population_Data.csv');
             const text = await response.text();
             Papa.parse(text, {
                 header: true,
