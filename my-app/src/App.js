@@ -10,11 +10,11 @@ function App() {
 
     useEffect(() => {
         // Fetch metrics and data
-        axios.get('https://backend-dashboard-jade.vercel.app/api/metrics').then(response => {
+        axios.get('https://vercel.com/sonu1002s-projects/back/api/metrics').then(response => {
             setMetrics(response.data);
         });
 
-        axios.get('https://backend-dashboard-jade.vercel.app/api/locations').then(response => {
+        axios.get('https://vercel.com/sonu1002s-projects/back/api/locations').then(response => {
             const { yearlyData, typeDistribution, priceVsRange } = response.data;
             setChartData({ yearlyData, typeDistribution, priceVsRange });
         });
